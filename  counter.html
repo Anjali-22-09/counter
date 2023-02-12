@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>counter</title> 
+    <style>
+        body{
+            background-image: url(https://images.unsplash.com/photo-1605979399824-542335ee35d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGlrYWNodXxlbnwwfHwwfHw%3D&w=1000&q=80);
+            color: white;
+            margin: 150px 200px 150px 500px;
+        }
+        div{
+            border: 2px solid black;
+            padding:30px;
+            width:600px;
+            width: fit-content;
+        }
+        #main{
+            display: flex;
+            background-image: url(https://cdn1.dotesports.com/wp-content/uploads/2022/01/29203001/Pikachu-Legends-Arceus.jpg);
+            color: black;
+            border: 2px solid black;
+        }
+        button{
+            background-color: lightblue;
+        }
+
+    </style>  
+</head> 
+<body>
+    <div>
+        <h1>0</h1>
+        <div id="main">
+        <button onclick="decrement();">-</button>
+        <h3> count</h3>
+        <button onclick="increment();">+</button>
+        </div>
+    </div>
+    
+
+<script>
+    let h1Tag=document.querySelector('h1');
+    let count=0;
+    function increment(){
+        count++;
+        if( count>0)
+        h1Tag.innerText=count;
+        else
+        h1Tag.innerText="0";
+    }  
+    function decrement(){
+        count--;
+        if( count>0)
+        h1Tag.innerText=count;
+        else
+        h1Tag.innerText="0";    
+    }
+       
+</script>
+    
+</body>
+
+</html>
